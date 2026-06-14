@@ -1,149 +1,48 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-<meta charset="UTF-8">
-<title>给你的小惊喜</title>
-
-<style>
-
-*{
-margin:0;
-padding:0;
-}
-
-body{
-
-height:100vh;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-background:
-linear-gradient(
-135deg,
-#ffdde1,
-#ee9ca7
-);
-
-font-family:
-"Microsoft YaHei";
-
-}
-
-.card{
-
-width:320px;
-
-padding:40px;
-
-background:white;
-
-border-radius:25px;
-
-text-align:center;
-
-box-shadow:
-0 15px 35px
-rgba(0,0,0,.15);
-
-}
-
-h1{
-
-color:#ff5a7a;
-
-margin-bottom:20px;
-
-}
-
-p{
-
-line-height:2;
-
-color:#555;
-
-}
-
-button{
-
-margin-top:25px;
-
-padding:12px 28px;
-
-border:none;
-
-border-radius:999px;
-
-background:#ff5a7a;
-
-color:white;
-
-font-size:18px;
-
-}
-
-#text{
-
-margin-top:25px;
-
-display:none;
-
-color:#ff4f73;
-
-font-size:20px;
-
-}
-
-</style>
-
-</head>
-
-<body>
-
-<div class="card">
-
-<h1>送给特别的你 ❤️</h1>
-
-<p>
-
-遇见你之后，<br>
-
-平凡的日子也开始闪闪发光。
-
-</p>
-
-<button onclick="show()">
-
-点一下
-
-</button>
-
-<div id="text">
-
-我喜欢你 🌷
-
-</div>
-
-</div>
-
-<script>
-
-function show(){
-
-document
-.getElementById("text")
-.style
-.display
-="block"
-
-}
-
-</script>
-
-</body>
-
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>给你的一封信</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page page-home">
+    <div class="page-texture" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="返回首页">给你的信</a>
+      <nav class="steps" aria-label="页面进度">
+        <span class="step is-active">首页</span>
+        <span class="step">信封</span>
+        <span class="step">终章</span>
+      </nav>
+    </header>
+
+    <main class="home-layout">
+      <section class="hero-copy">
+        <p class="eyebrow">A small letter</p>
+        <h1>有些话，想认真地交给你。</h1>
+        <p class="lead">不是突然出现的浪漫，是一点点藏起来的心动，终于想被你看见。</p>
+        <a class="primary-btn" href="letter.html">
+          <span>打开这封信</span>
+          <span aria-hidden="true">-></span>
+        </a>
+      </section>
+
+      <section class="depth-stage" aria-label="信件预览">
+        <div class="paper-sheet sheet-back"></div>
+        <div class="paper-sheet sheet-mid"></div>
+        <div class="paper-sheet sheet-front">
+          <span class="mini-line"></span>
+          <span class="mini-line short"></span>
+          <span class="mini-line"></span>
+        </div>
+        <div class="stamp-mark" aria-hidden="true">
+          <span>13</span>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
 </html>

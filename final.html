@@ -1,47 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>最后一页</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page page-final">
+    <div class="page-texture" aria-hidden="true"></div>
+    <canvas class="spark-canvas" data-spark-canvas aria-hidden="true"></canvas>
 
-<html>
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="返回首页">给你的信</a>
+      <nav class="steps" aria-label="页面进度">
+        <a class="step" href="index.html">首页</a>
+        <a class="step" href="letter.html">信封</a>
+        <span class="step is-active">终章</span>
+      </nav>
+    </header>
 
-<head>
+    <main class="final-layout">
+      <section class="final-note">
+        <p class="eyebrow">The last page</p>
+        <h1><span data-type-text="我喜欢你。">我喜欢你。</span></h1>
+        <p class="lead">
+          这句话不想再藏在玩笑里，也不想再只停在心里。今天就郑重地交给你。
+        </p>
+        <div class="final-actions">
+          <button class="secondary-btn" type="button" data-spark-button>收藏这一刻</button>
+          <a class="primary-btn" href="index.html">
+            <span>再看一遍</span>
+            <span aria-hidden="true">-></span>
+          </a>
+        </div>
+      </section>
 
-<meta charset="UTF-8">
+      <section class="memory-strip" aria-label="想告诉你的三件小事">
+        <article class="memory-item">
+          <span class="item-number">01</span>
+          <h2>看见你</h2>
+          <p>世界会安静一点。</p>
+        </article>
+        <article class="memory-item">
+          <span class="item-number">02</span>
+          <h2>想到你</h2>
+          <p>心情会亮一点。</p>
+        </article>
+        <article class="memory-item">
+          <span class="item-number">03</span>
+          <h2>靠近你</h2>
+          <p>勇气会多一点。</p>
+        </article>
+      </section>
+    </main>
 
-<title>最后一页</title>
-
-<link
-rel="stylesheet"
-href="style.css">
-
-<script
-src="script.js">
-
-</script>
-
-</head>
-
-<body>
-
-<div class="card">
-
-<h1>
-
-❤️
-
-</h1>
-
-<div id="text">
-
-</div>
-
-<button
-onclick="showLove()">
-
-点击查看
-
-</button>
-
-</div>
-
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>

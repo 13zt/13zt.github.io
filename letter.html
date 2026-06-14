@@ -1,56 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>信封</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page page-letter">
+    <div class="page-texture" aria-hidden="true"></div>
 
-<html>
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="返回首页">给你的信</a>
+      <nav class="steps" aria-label="页面进度">
+        <a class="step" href="index.html">首页</a>
+        <span class="step is-active">信封</span>
+        <span class="step">终章</span>
+      </nav>
+    </header>
 
-<head>
+    <main class="letter-layout">
+      <section class="envelope-scene" data-letter-scene>
+        <button
+          class="envelope"
+          type="button"
+          data-open-letter
+          aria-expanded="false"
+          aria-controls="letter-paper"
+        >
+          <span class="envelope-shadow" aria-hidden="true"></span>
+          <span class="envelope-back" aria-hidden="true"></span>
+          <span class="envelope-paper" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <span class="envelope-front" aria-hidden="true"></span>
+          <span class="envelope-flap" aria-hidden="true"></span>
+          <span class="seal" aria-hidden="true">open</span>
+        </button>
 
-<meta charset="UTF-8">
+        <article class="letter-paper" id="letter-paper">
+          <p class="eyebrow">Dear you</p>
+          <h1>我把这封信，慢慢写给你。</h1>
+          <p>
+            认识你之后，很多普通的瞬间都变得特别。路过的风、听过的歌、突然想到的笑，
+            好像都会绕一圈，最后落到你身上。
+          </p>
+          <p>
+            我不是很擅长把喜欢说得漂亮，但我很确定：每一次想靠近你，都是真心的。
+          </p>
+          <a class="primary-btn" href="final.html">
+            <span>继续往下看</span>
+            <span aria-hidden="true">-></span>
+          </a>
+        </article>
+      </section>
+    </main>
 
-<title>给你的信</title>
-
-<link
-rel="stylesheet"
-href="style.css">
-
-</head>
-
-<body>
-
-<div class="card">
-
-<h1>
-
-💌
-
-</h1>
-
-<p>
-
-不是因为某个瞬间心动。
-
-而是在很多普通日子里，
-
-慢慢发现，
-
-想把未来分享给你。
-
-</p>
-
-<br>
-
-<a
-href="final.html">
-
-<button>
-
-继续打开
-
-</button>
-
-</a>
-
-</div>
-
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
