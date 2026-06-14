@@ -1,15 +1,149 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 <meta charset="UTF-8">
-<title>我的网站</title>
+<title>给你的小惊喜</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+}
+
+body{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+background:
+linear-gradient(
+135deg,
+#ffdde1,
+#ee9ca7
+);
+
+font-family:
+"Microsoft YaHei";
+
+}
+
+.card{
+
+width:320px;
+
+padding:40px;
+
+background:white;
+
+border-radius:25px;
+
+text-align:center;
+
+box-shadow:
+0 15px 35px
+rgba(0,0,0,.15);
+
+}
+
+h1{
+
+color:#ff5a7a;
+
+margin-bottom:20px;
+
+}
+
+p{
+
+line-height:2;
+
+color:#555;
+
+}
+
+button{
+
+margin-top:25px;
+
+padding:12px 28px;
+
+border:none;
+
+border-radius:999px;
+
+background:#ff5a7a;
+
+color:white;
+
+font-size:18px;
+
+}
+
+#text{
+
+margin-top:25px;
+
+display:none;
+
+color:#ff4f73;
+
+font-size:20px;
+
+}
+
+</style>
+
 </head>
 
-<body style="text-align:center;padding-top:120px">
+<body>
 
-<h1>欢迎来到我的网站 🎉</h1>
+<div class="card">
 
-<p>这是我创建的第一个网站</p>
+<h1>送给特别的你 ❤️</h1>
+
+<p>
+
+遇见你之后，<br>
+
+平凡的日子也开始闪闪发光。
+
+</p>
+
+<button onclick="show()">
+
+点一下
+
+</button>
+
+<div id="text">
+
+我喜欢你 🌷
+
+</div>
+
+</div>
+
+<script>
+
+function show(){
+
+document
+.getElementById("text")
+.style
+.display
+="block"
+
+}
+
+</script>
 
 </body>
+
 </html>
